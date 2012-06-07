@@ -6,7 +6,7 @@ function generate_calendar_button($name, $description, DateTime $start, DateTime
    $parts['action'] = 'TEMPLATE';
    $parts['text'] = urlencode($name);
    $parts['details'] = urlencode($description);
-   $parts['dates'] = urlencode($start->format("c")) . "/" . urlencode($end->format("c"));
+   $parts['dates'] = urlencode($start->format("Ymd\THis\Z")) . "/" . urlencode($end->format("Ymd\THis\Z"));
    $parts['location'] = urlencode($location);
    $parts['sprop'] = urlencode($mysite_url);
 #   $parts['sprop'][1] = urlencode($mysite_url);
