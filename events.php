@@ -15,7 +15,7 @@ function generate_calendar_button($name, $description, DateTime $start, DateTime
    }
    $full_link .= "&sprop=name:" . urlencode($mysite_name);
 
-   return '<a href="' . $full_link . '" target="_blank"><img src="//www.google.com/calendar/images/ext/gc_button1.gif" border=0></a>';
+   return '<a href="' . $full_link . '" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0></a>';
 }
 
 ?>
